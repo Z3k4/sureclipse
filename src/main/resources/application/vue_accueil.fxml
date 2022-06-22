@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="fondAccueil" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controleur.ControleurAccueil">
+   <children>
+      <Pane fx:id="paneNuages" prefHeight="200.0" prefWidth="200.0" />
+      <VBox fx:id="btnQuitNouv" layoutX="215.0" layoutY="100.0" prefHeight="200.0" prefWidth="171.0">
+         <children>
+            <Button fx:id="nouvellePartie" mnemonicParsing="false" onAction="#lancerJeu" prefHeight="25.0" prefWidth="275.0" styleClass="boutonAccueil" text="Nouvelle partie">
+               <VBox.margin> 
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="quitterJeu" mnemonicParsing="false" onAction="#quitterLeJeu" prefHeight="25.0" prefWidth="315.0" styleClass="boutonAccueil" text="Quitter">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="105.0" fitWidth="307.0" layoutX="168.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../letryan.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
